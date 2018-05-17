@@ -2,6 +2,9 @@
 body {
   font-family: "Arial", sans-serif;
 }
+.container {
+  display: flex;
+}
 /* Header */
 nav.mobile {
   display: none;
@@ -54,11 +57,10 @@ span.title-2 {
 .banner {
   position: relative;
   top: 64px;
-  display: flex;
   justify-content: center;
   background-color: LightGrey;
 }
-.image-content {
+.image-banner {
   width: 60%;
   display: block;
   margin: 32px 24px;
@@ -67,9 +69,31 @@ span.title-2 {
   width: 100%;
   overflow: hidden;
 }
-.text-content {
+.text-banner {
+  width: 40%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: left;
+  color: rgb(64, 64, 64);
+  padding-right: 75px;;
 }
+.banner h1 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 1.2;
+}
+.banner span {
+  font-size: 22px;
+  padding: 20px 0;
+}
+.button {
+  display: block;
+  background-color: rgb(64, 64, 64);
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 20px;
+}
+
+/* Info */
