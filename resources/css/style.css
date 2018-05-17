@@ -1,5 +1,7 @@
 /* General */
-
+body {
+  font-family: "Arial", sans-serif;
+}
 /* Header */
 nav.mobile {
   display: none;
@@ -12,7 +14,6 @@ header {
   height: 64px;
   width: 100%;
   background-color: white;
-  font-family: "Arial", sans-serif;
 }
 .logo {
   display: flex;
@@ -55,14 +56,20 @@ span.title-2 {
   top: 64px;
   display: flex;
   justify-content: center;
+  background-color: LightGrey;
+}
+.image-content {
+  width: 60%;
+  display: block;
+  margin: 32px 24px;
 }
 .banner img {
-  width: 60%;
-  padding: 32px 24px;
+  width: 100%;
+  overflow: hidden;
 }
 .text-content {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: left;
-} 
+}
