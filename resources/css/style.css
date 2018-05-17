@@ -1,0 +1,68 @@
+/* General */
+
+/* Header */
+nav.mobile {
+  display: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  height: 64px;
+  width: 100%;
+  background-color: white;
+  font-family: "Arial", sans-serif;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  flex-grow: 1;
+}
+.logo span {
+  height: 32px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.logo img {
+  height: 42px;
+}
+header nav {
+  padding-right: 16px;
+}
+nav span{
+  display: inline-block;
+  padding: 0px 8px;
+}
+a {
+  color: DimGrey;
+  text-decoration: none;
+}
+span.title-1 {
+  font-weight: 600;
+}
+span.title-2 {
+  color: DarkGrey;
+  font-weight: 100;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  top: 64px;
+  display: flex;
+  justify-content: center;
+}
+.banner img {
+  width: 60%;
+  padding: 32px 24px;
+}
+.text-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+} 
