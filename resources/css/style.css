@@ -4,6 +4,20 @@ body {
 }
 .container {
   display: flex;
+  position: relative;
+}
+.container-left {
+  display: block;
+  width: 60%;
+  margin: 32px 24px;
+}
+.container-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.article {
+  display: flex;
 }
 /* Header */
 nav.mobile {
@@ -60,20 +74,12 @@ span.title-2 {
   justify-content: center;
   background-color: LightGrey;
 }
-.image-banner {
-  width: 60%;
-  display: block;
-  margin: 32px 24px;
-}
 .banner img {
   width: 100%;
   overflow: hidden;
 }
 .text-banner {
-  width: 40%;
-  display: flex;
   justify-content: center;
-  flex-direction: column;
   text-align: left;
   color: rgb(64, 64, 64);
   padding-right: 75px;;
@@ -97,3 +103,59 @@ span.title-2 {
 }
 
 /* Info */
+.info {
+  top: 64px;
+  background-color: rgb(242, 242, 242);
+}
+.image-info img {
+  width: 100%;
+  overflow: hidden;
+}
+.image-info h1 {
+  font-size: 32px;
+  color: rgb(64, 64, 64);
+  font-weight: 600;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+.image-info p, .image-info span {
+  color: DimGrey;
+  font-weight: 100;
+}
+.tiny {
+  display: block;
+  font-size: 12px;
+  padding-top: 36px;
+}
+.articles-info {
+  margin: 32px auto;
+  border-left: 1px solid rgb(166, 166, 166);
+}
+.image-small {
+  display: block;
+  width: 35%;
+  margin: 16px;
+}
+.image-small img{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.text-small {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-small h3{
+  color: rgb(64, 64, 64);
+  font-weight: 600;
+}
+.text-small span {
+  color: DimGrey;
+  font-weight: 100;
+  padding: 8px 0;
+}
+.read-more {
+  color: rgb(57, 115, 172);
+}
