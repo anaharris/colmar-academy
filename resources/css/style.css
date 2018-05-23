@@ -5,6 +5,7 @@ body {
 .container {
   display: flex;
   position: relative;
+  top: 64px;
 }
 .container-left {
   display: block;
@@ -70,8 +71,6 @@ span.title-2 {
 
 /* Banner */
 .banner {
-  position: relative;
-  top: 64px;
   justify-content: center;
   background-color: LightGrey;
 }
@@ -105,7 +104,6 @@ span.title-2 {
 
 /* Info */
 .info {
-  top: 64px;
   background-color: rgb(242, 242, 242);
 }
 .image-info img {
@@ -168,7 +166,6 @@ span.title-2 {
   width: 100%;
   margin: auto;
   color: rgb(64, 64, 64);
-  top: 64px;
 }
 .title-courses {
   text-align: center;
@@ -211,4 +208,9 @@ span.title-2 {
 .course p {
   color: DarkGrey;
   font-weight: lighter;
+}
+
+/* Thesis */
+.thesis {
+  background-color: rgb(242, 242, 242);
 }
