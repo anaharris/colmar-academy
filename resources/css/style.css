@@ -19,6 +19,7 @@ body {
 .article {
   display: flex;
 }
+
 /* Header */
 nav.mobile {
   display: none;
@@ -158,4 +159,56 @@ span.title-2 {
 }
 .read-more {
   color: rgb(57, 115, 172);
+}
+
+/* Courses */
+.courses {
+  display: block;
+  background-color: rgb(217, 217, 217);
+  width: 100%;
+  margin: auto;
+  color: rgb(64, 64, 64);
+  top: 64px;
+}
+.title-courses {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  padding-top: 72px;
+}
+.courses-list {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px 72px;
+}
+.course {
+  width: 28%;
+  margin: 1rem;
+}
+.course img {
+  width: 100%;
+  height: auto;
+}
+.course-text {
+  height: 7rem;
+  background-color: white;
+  padding: 1rem;
+}
+.course h2 {
+  font-weight: 600;
+  margin-top: 8px;
+}
+.course h3 {
+  padding: 8px 0;
+  color: DarkGrey;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.course p {
+  color: DarkGrey;
+  font-weight: lighter;
 }
