@@ -254,6 +254,9 @@ footer {
   padding-left: 24px;
   flex-grow: 1;
 }
+.terms-privacy {
+  padding-right: 8px;
+}
 footer span {
   display: inline-block;
   padding: 0px 8px;
