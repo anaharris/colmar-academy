@@ -1,6 +1,6 @@
 /* General */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .container {
   display: flex;
@@ -33,7 +33,7 @@ header {
   z-index: 1;
   height: 64px;
   width: 100%;
-  background-color: white;
+  background-color: #ffffff;
 }
 .logo {
   display: flex;
@@ -42,11 +42,14 @@ header {
   flex-grow: 1;
 }
 .logo span {
-  height: 32px;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  color: rgb(57,57,57);
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  font-size: 18px;
 }
 .logo img {
   height: 42px;
@@ -59,21 +62,27 @@ nav span{
   padding: 0px 8px;
 }
 a {
-  color: DimGrey;
+  font-size: 12px;
+  line-height: 27px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(57,57,57);
   text-decoration: none;
+  font-weight: 100;
 }
 span.title-1 {
   font-weight: 600;
+  padding-right: 1px;
 }
 span.title-2 {
-  color: DarkGrey;
   font-weight: 100;
 }
 
 /* Banner */
 .banner {
   justify-content: center;
-  background-color: LightGrey;
+  background-color: rgb(150,133,143);
 }
 .banner img {
   width: 100%;
@@ -82,25 +91,34 @@ span.title-2 {
 .text-banner {
   justify-content: center;
   text-align: left;
-  color: rgb(64, 64, 64);
-  padding-right: 75px;;
+  color: rgb(255, 255, 255);
+  padding-right: 75px;
 }
 .banner h1 {
-  font-weight: bold;
-  font-size: 35px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 30px;
   line-height: 1.2;
 }
 .banner span {
-  font-size: 22px;
+  font-size: 20px;
+  letter-spacing: 1px;
   padding: 20px 0;
+  padding-bottom: 40px;
+  font-weight: 100;
 }
 .button {
   display: block;
-  background-color: rgb(64, 64, 64);
-  color: white;
+  background-color:rgb(26,41,48);
+  color: #C5C1C0;
   text-align: center;
-  padding: 8px 0;
+  padding: 10px 0;
+  font-family: 'Jura', sans-serif;
+  text-transform: uppercase;
   font-size: 20px;
+  border-radius: 3px;
 }
 
 /* Info */
@@ -162,7 +180,7 @@ span.title-2 {
 /* Courses */
 .courses {
   display: block;
-  background-color: rgb(217, 217, 217);
+  background-color: #706F6B;
   width: 100%;
   margin: auto;
   color: rgb(64, 64, 64);
@@ -261,4 +279,39 @@ footer {
 footer span {
   display: inline-block;
   padding: 0px 8px;
+}
+
+/* Media query for mobile phones */
+
+@media only screen and (max-width: 610px) {
+  header {
+    right: 0;
+    width: 100;
+  }
+  header nav {
+    padding: 0;
+  }
+  nav.desktop {
+    display: none;
+  }
+  nav.mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+  .logo {
+    display: none;
+    padding: 0;
+  }
+  .banner {
+    flex-direction: column;
+    width: 100%;
+  }
+  .image-banner {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .text-banner {
+    width: 100%;
+  }
 }
